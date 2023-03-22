@@ -11,7 +11,7 @@ from django.views.decorators.csrf import csrf_exempt
 def gpttest(request):
     message = request.data.get('message')
     openai.organization = "org-eC71vQjJT5hMfOLKcvClMq0Y"
-    openai.api_key = "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"
+    openai.api_key = "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"
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
